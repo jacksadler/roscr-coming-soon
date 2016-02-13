@@ -99,3 +99,8 @@ body {
   padding-right:7px;
   padding-left:7px;
 }
+
+.logo_container>img{
+  width: 275px;
+  height: 225px;
+}
