@@ -17,7 +17,51 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch: {}
+    webpack: {
+      dev: {
+        entry: "./index.js",
+
+        output: {
+            path: "build/",
+            filename: "dist.min.js",
+        },
+
+        stats: {
+            // Configure the console output
+            colors: false,
+            modules: true,
+            reasons: true
+        },
+
+        devtool: 'source-map',
+        
+        module: {
+          loaders: [
+            {
+              test: /\.jsx?$/,
+              exclude: /(node_modules|bower_components)/,
+              loader: 'babel', // 'babel-loader' is also a legal name to reference 
+              query: {
+                presets: ['react', 'es2015']
+              }
+            }
+          ]
+        }
+      },
+    },
+    watch: {
+      scripts: {
+        files: '**/*.js',
+        tasks: ['webpack:dev']
+      },
+      css: {
+        files: 'resources/css/*.css',
+        tasks: ['cssmin']
+      }
+    }
   });
+
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-webpack');
 };

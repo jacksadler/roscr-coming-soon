@@ -47,6 +47,11 @@ body {
 }
 
 #coming-soon-countdown>div>div {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#coming-soon-countdown>div>div>div.timeBoxInner {
   color: #fff;
   line-height: 20px;
   padding: 7px 15px !important;
@@ -55,22 +60,29 @@ body {
   text-align: center;
 }
 
-#coming-soon-countdown>div>div>div.value{
+#coming-soon-countdown>div>div>div>div.value {
   display: inline-block;
   font-size: 38px !important;
   padding: 15px !important;
   font-weight: 300;
 }
 
+#coming-soon-countdown>div>div>div>div.unit{
+  /*display: inline-block;*/
+  font-size: 16px !important;
+  padding: 5px !important;
+  font-weight: 300;
+}
+
 /*Responsive*/
 @media (max-width: 1024px) {
-  #defaultCountdown span.countdown_amount {
+  #coming-soon-countdown>div>div>div>div.value {
     padding: 10px;
   }
 }
 @media (max-width: 767px) {
   .coming-soon-header,
-  .coming-soon-countdown,
+  #coming-soon-countdown,
   .coming-soon-content,
   .coming-soon-footer {
     margin-top: 0px;
@@ -81,4 +93,9 @@ body {
   .coming-soon-content .btn-subscribe span {
     display: none;
   }
+}
+
+.col-gutter:not(:first-child,:last-child) {
+  padding-right:7px;
+  padding-left:7px;
 }
