@@ -35,32 +35,51 @@
                 </span>
               </div>
             </form>
-            <ul class="social-icons margin-top-20">
-              <li>
-                <a href="javascript:;" data-original-title="Feed" class="rss"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Facebook" class="facebook"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Twitter" class="twitter"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Goole Plus" class="googleplus"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Pinterest" class="pintrest"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Linkedin" class="linkedin"></a>
-              </li>
-              <li>
-                <a href="javascript:;" data-original-title="Vimeo" class="vimeo"></a>
-              </li>
-            </ul>
+            <div>
+              <ul class="social-icons margin-top-20">
+                <li>
+                  <a href="javascript:;" data-original-title="Feed" class="rss"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Facebook" class="facebook"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Twitter" class="twitter"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Goole Plus" class="googleplus"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Pinterest" class="pintrest"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Linkedin" class="linkedin"></a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-original-title="Vimeo" class="vimeo"></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-6 coming-soon-countdown">
-            <div id="defaultCountdown">
+          <div class="col-md-6" id="coming-soon-countdown">
+            <div class="row">
+                <div class="col-md-3 col-sm-6" id="daysCount">
+                  <div class="value"></div>
+                  <div class="unit">Days</div>
+                </div>
+                <div class="col-md-3 col-sm-6" id="hoursCount">
+                  <div class="value"></div>
+                  <div class="unit">Hours</div>
+                </div>
+                <div class="col-md-3 col-sm-6" id="minutesCount">
+                  <div class="value"></div>
+                  <div class="unit">Minutes</div>
+                </div>
+                <div class="col-md-3 col-sm-6" id="secondsCount">
+                  <div class="value"></div>
+                  <div class="unit">Seconds</div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -69,17 +88,5 @@
       </div>
     </div>
     <script src="build/dist.min.js" type="text/javascript"></script>
-    <script>
-      // jQuery(document).ready(function() {
-      //   ComingSoon.init();
-      //   // init background slide images
-      //   $.backstretch([
-      //     //images
-      //   ], {
-      //     fade: 1000,
-      //     duration: 10000
-      //   });
-      // });
-    </script>
   </body>
 </html>

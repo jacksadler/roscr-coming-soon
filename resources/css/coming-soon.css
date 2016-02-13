@@ -17,7 +17,7 @@ body {
   margin-top: 10px;
 }
 
-.coming-soon-countdown {
+#coming-soon-countdown {
   padding: 20px;
 }
 
@@ -31,6 +31,8 @@ body {
   line-height: 50px;
   margin-bottom: 15px;
   font-weight: 300;
+  position: relative;
+  left: -2px;
 }
 
 .coming-soon-content p {
@@ -44,38 +46,16 @@ body {
   padding: 20px 20px 20px 20px;
 }
 
-/*Countdown*/
-#defaultCountdown {
-  width: 100%;
-  margin: 10px 0;
-  overflow: hidden;
-}
-
-#defaultCountdown span.countdown_row {
-  overflow: hidden;
-}
-
-#defaultCountdown span.countdown_row span {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px;
-  margin-right: 2px;
-}
-
-#defaultCountdown span.countdown_row > span {
-  float: left;
-}
-
-#defaultCountdown span.countdown_section {
+#coming-soon-countdown>div>div {
   color: #fff;
+  line-height: 20px;
   padding: 7px 15px !important;
-  margin-bottom: 2px;
   font-weight: 300;
   background: url(../resources/img/bg-white.png) repeat;
   text-align: center;
 }
 
-#defaultCountdown span.countdown_amount {
+#coming-soon-countdown>div>div>div.value{
   display: inline-block;
   font-size: 38px !important;
   padding: 15px !important;
