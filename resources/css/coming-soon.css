@@ -18,7 +18,7 @@ body {
 }
 
 #coming-soon-countdown {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .coming-soon-content h1,
@@ -44,11 +44,6 @@ body {
   font-size: 12px;
   color: #fefefe;
   padding: 20px 20px 20px 20px;
-}
-
-#coming-soon-countdown>div>div {
-  padding-right: 2px;
-  padding-left: 2px;
 }
 
 #coming-soon-countdown>div>div>div.timeBoxInner {
@@ -95,11 +90,6 @@ body {
   }
 }
 
-.col-gutter:not(:first-child,:last-child) {
-  padding-right:7px;
-  padding-left:7px;
-}
-
 .logo_container>img{
   width: 275px;
   height: 225px;
@@ -140,4 +130,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #808a94;
+}
+
+.p-l-none{
+  padding-left: 0px !important;
+}
+
+.p-r-none{
+  padding-right: 0px !important;
 }
