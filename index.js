@@ -30,7 +30,7 @@ window.jQuery(document).ready(function () {
     './resources/img/backgrounds/5.jpg',
     './resources/img/backgrounds/7.jpg'
   ], {
-    fade: 1000,
-    duration: 1000
+    fade: 2000,
+    duration: 9000
   });
 });
