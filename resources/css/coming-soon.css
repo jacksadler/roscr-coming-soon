@@ -9,7 +9,7 @@ body {
 
 .coming-soon-header {
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .coming-soon-content {
@@ -103,4 +103,41 @@ body {
 .logo_container>img{
   width: 275px;
   height: 225px;
+}
+
+.card-icon {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-icon i {
+  font-size: 50px;
+  border: 1px solid #ecf0f4;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 47px 30px;
+  margin: 30px 0 30px 0;
+}
+
+.card-title {
+  text-align: center; }
+
+.card-title span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #373d43;
+}
+
+.card-desc {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card-desc span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808a94;
 }

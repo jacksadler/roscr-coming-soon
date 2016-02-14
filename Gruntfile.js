@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         files: {
           'build/dist.min.css': [
             'resources/fonts/PT_Sans/stylesheet.css',
-            'node_modules/simple-line-icons/css/simple-line-icons.css',
+            'resources/fonts/simple-line-icons/css/simple-line-icons.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'resources/fonts/font-awesome-4.5.0/css/font-awesome.css',
             'resources/css/*.css'
