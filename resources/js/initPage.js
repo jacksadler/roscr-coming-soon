@@ -1,5 +1,4 @@
 var ComingSoon = function () {
-
     return {
         //main function to initiate the module
         init: function () {
@@ -8,7 +7,7 @@ var ComingSoon = function () {
             $('#defaultCountdown').countdown({until: austDay});
             $('#year').text(austDay.getFullYear());
         }
-
     };
+};
 
-}();
+export default ComingSoon;

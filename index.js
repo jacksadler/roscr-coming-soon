@@ -4,7 +4,7 @@ import bootstrap from 'bootstrap';
 import bootstrapHoverDrown from './resources/js/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js';
 import jQuerySlimscroll from './resources/js/jquery-slimscroll/jquery.slimscroll.min.js';
 import countdown from './resources/js/countdown/jquery.countdown.js';
-import backstretch from './resources/js/backstretch/jquery.backstretch.min.js';
+import bgCycler from './resources/js/bg-cycler.js';
 
 window.jQuery(document).ready(function () {
   const elemCache = {
@@ -30,14 +30,5 @@ window.jQuery(document).ready(function () {
     e.stopPropagation();
   });
 
-  // init background slide images
-  $.backstretch([
-    './resources/img/backgrounds/3.jpg',
-    './resources/img/backgrounds/4.jpg',
-    './resources/img/backgrounds/5.jpg',
-    './resources/img/backgrounds/7.jpg'
-  ], {
-    fade: 2000,
-    duration: 9000
-  });
+  bgCycler();
 });
