@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
         output: {
             path: "build/",
-            filename: "dist.min.js",
+            filename: "dist.js",
         },
 
         stats: {
@@ -34,13 +34,13 @@ module.exports = function(grunt) {
         },
 
         devtool: 'source-map',
-        
+
         module: {
           loaders: [
             {
               test: /\.jsx?$/,
               exclude: /(node_modules|bower_components)/,
-              loader: 'babel', // 'babel-loader' is also a legal name to reference 
+              loader: 'babel', // 'babel-loader' is also a legal name to reference
               query: {
                 presets: ['react', 'es2015']
               }

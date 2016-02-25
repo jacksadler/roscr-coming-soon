@@ -1,0 +1,10 @@
+.submitted.has-error input {
+  outline: 0!important;
+  border-color: #e73d4a;
+}
+
+
+.submitted.has-error input:focus {
+  outline: 0!important;
+  border-color: #d71b29;
+}
